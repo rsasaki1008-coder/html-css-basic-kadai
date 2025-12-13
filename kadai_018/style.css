@@ -1,0 +1,92 @@
+/* #top セクションの装飾 */
+#top {
+    /* 横幅、背景、中央配置 */
+    width: 800px;
+    background-color: #dcc9f4;
+    margin: 20px auto;
+
+    /* 子要素の横並びと中央揃え */
+    display: flex;
+    justify-content: center;
+}
+
+/* p要素（class名「top-child」）に対する装飾 */
+.top-child {
+    width: 20%; /* 親要素の20% */
+    background-color: #ffd9df;
+    text-align: center;
+}
+
+
+/* #middle セクションの装飾 */
+#middle {
+    /* デザイン指定 */
+    width: 800px;
+    height: 800px;
+    background-color: #ffd9df;
+    margin: 20px auto; /* 中央配置 */
+
+    /* 子要素の絶対配置の基準点 */
+    position: relative;
+}
+
+/* #middle の子要素（共通スタイル） */
+#middle-child01,
+#middle-child02,
+#middle-child03 {
+    /* デザインと絶対配置の設定 */
+    width: 200px;
+    height: 200px;
+    background-color: #87ceeb;
+    position: absolute; 
+}
+
+
+/* #middle の子要素（個別配置） */
+#middle-child01 {
+    top: 100px;
+    left: 100px;
+}
+
+#middle-child02 {
+    top: 300px;
+    left: 300px;
+}
+
+#middle-child03 {
+    top: 500px;
+    left: 500px;
+}
+
+
+/* #bottom セクションの装飾 */
+#bottom {
+    /* デザイン指定 */
+    width: 800px;
+    height: 300px;
+    background-color: #87ceeb;
+    margin: 20px auto; /* 中央配置 */
+}
+
+/* #bottom の子要素（共通スタイルと位置設定） */
+#bottom-child01,
+#bottom-child02,
+#bottom-child03 {
+    /* デザイン指定 */
+    width: 400px;
+    height: 100px;
+    background-color: #e5dcf0;
+
+    /* 相対的な移動を許可 */
+    position: relative; 
+}
+
+
+/* #bottom の子要素（個別配置） */
+#bottom-child02 {
+    left: 200px;
+}
+
+#bottom-child03 {
+    left: 400px;
+}
